@@ -1,0 +1,27 @@
+git clone git@github.com:esraaragab995/lab2project.git
+git branch dev
+git branch test
+git checkout dev
+touch div1
+touch div2
+git add .
+git commit -m "add dev"
+git push origin dev
+git checkout test
+touch test1
+touch test2
+git add .
+git commit -m "add test"
+git push orgin test
+git checkout main
+git merge dev
+git merge test
+git branch -d dev
+git branch -d test
+git push origin :dev
+git push origin :test
+git tag -a v1.4 -m "version 1.4"
+git tag
+git push origin v1.4
+git tag -d v1.4
+git push origin --delete v1.4
